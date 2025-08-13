@@ -17,7 +17,7 @@ class Env {
     jwtSecret: string;
 }
 export const env: Env = plainToInstance(Env, {
-    
+    dbURL: process.env.DATABASE_URL,
     jwtSecret: process.env.JWT_SECRET,
 });
 
